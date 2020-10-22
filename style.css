@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	list-style: none;
+	color: #000;
+	font-family: "Comfortaa", sans-serif;
+}
+
+#main {
+	position: relative;
+	display: flex;
+	flex: 1;
+
+	height: 100vh;
+	max-height: 100%;
+
+	width: 100vw;
+	max-width: 100%;
+}
+
+.bg {
+	background-color: #4158d0;
+	background-image: linear-gradient(
+		315deg,
+		#4158d0 0%,
+		#c850c0 46%,
+		#ffcc70 100%
+	);
+}
+
+.none {
+	display: none;
+}
+
+.absolute-center {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+
+	z-index: 0;
+}
+.absolute-center h1 {
+	font-weight: bold;
+	font-size: 20vw;
+	color: white;
+	opacity: 0.06;
+}
+
+.center-container {
+	position: relative;
+	display: flex;
+	flex: 1;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+
+	height: 30vw;
+	width: 30vw;
+
+	background-color: #ffffff50;
+	border-radius: 100%;
+
+	-webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.07);
+	box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.07);
+}
+
+.card.ghost {
+	position: absolute;
+
+	height: 30vw;
+	width: 30vw;
+}
+
+.ghostBall {
+	background-color: white;
+	border-radius: 100%;
+}
+
+.card-title {
+	font-size: 2vw;
+	opacity: 0.22;
+}
+
+.card-content {
+	font-size: 5vw;
+	opacity: 0.72;
+	font-family: "Roboto Mono";
+}
+
+.card-footer {
+	padding: 10px;
+}
+
+.card-button {
+	outline: none;
+	padding: 5px;
+	font-size: 2vw;
+	opacity: 0.22;
+	background-color: transparent;
+	border: none;
+}
+
+.card-button:hover {
+	opacity: 0.72;
+	cursor: pointer;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#pacman {
+	width: 700px;
+	height: 700px;
+	border-right: 60px solid transparent;
+	border-top: 60px solid blue;
+	border-left: 60px solid blue;
+	border-bottom: 60px solid blue;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
